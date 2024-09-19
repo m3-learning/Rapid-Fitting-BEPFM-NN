@@ -1,0 +1,2878 @@
+
+ 2024-09-16 15:05:22 - Data creation successful
+ 2024-09-16 15:05:23 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 15:10:55 - Data creation successful
+ 2024-09-16 15:10:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 15:22:06 - Data creation successful
+ 2024-09-16 15:22:06 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 15:24:35 - Data creation failed with error: 
+ Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 242, in data_record_create
+    metadata=json.dumps(metadata),
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type MSELoss is not JSON serializable
+
+ 2024-09-16 15:38:20 - Data creation successful
+ 2024-09-16 15:38:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 15:40:36 - Data creation failed with error: 
+ Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 241, in data_record_create
+    dc_resp = self.dataCreate(
+              ^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed/CommandLib.py", line 495, in dataCreate
+    return self._mapi.sendRecv(msg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed/MessageLib.py", line 384, in sendRecv
+    reply, mt, ctxt = self.recv(_timeout, nack_except)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed/MessageLib.py", line 429, in recv
+    raise Exception(reply.err_msg)
+Exception: 'title' field is too long. Maximum length is 80.
+(source: dbPost:265 code:1)
+
+
+ 2024-09-16 15:44:36 - Data creation successful
+ 2024-09-16 15:44:37 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 15:47:26 - Data creation successful
+ 2024-09-16 15:47:27 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 15:49:49 - Data creation successful
+ 2024-09-16 15:49:50 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 16:04:36 - Data creation successful
+ 2024-09-16 16:04:36 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 16:07:01 - Data creation successful
+ 2024-09-16 16:07:02 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 16:15:28 - Data creation successful
+ 2024-09-16 16:15:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 16:17:41 - Data creation successful
+ 2024-09-16 16:17:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 17:31:43 - Data creation successful
+ 2024-09-16 17:31:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 17:32:53 - Data creation successful
+ 2024-09-16 17:32:54 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 17:33:00 - Data creation successful
+ 2024-09-16 17:33:00 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 17:35:11 - Data creation successful
+ 2024-09-16 17:35:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 17:39:22 - Data creation successful
+ 2024-09-16 17:39:23 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 17:56:21 - Data creation successful
+ 2024-09-16 17:56:22 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 18:36:06 - Data creation successful
+ 2024-09-16 18:36:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 18:38:28 - Data creation successful
+ 2024-09-16 18:38:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 18:55:52 - Data creation successful
+ 2024-09-16 18:55:53 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 18:58:42 - Data creation successful
+ 2024-09-16 18:58:43 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:01:16 - Data creation successful
+ 2024-09-16 19:01:17 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:17:58 - Data creation successful
+ 2024-09-16 19:17:59 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:20:36 - Data creation successful
+ 2024-09-16 19:20:37 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:23:07 - Data creation successful
+ 2024-09-16 19:23:08 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:25:38 - Data creation successful
+ 2024-09-16 19:25:39 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:28:13 - Data creation successful
+ 2024-09-16 19:28:15 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:30:39 - Data creation successful
+ 2024-09-16 19:30:40 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:32:10 - Data creation successful
+ 2024-09-16 19:32:11 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:33:42 - Data creation successful
+ 2024-09-16 19:33:43 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:35:08 - Data creation successful
+ 2024-09-16 19:35:09 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:36:29 - Data creation successful
+ 2024-09-16 19:36:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:37:41 - Data creation successful
+ 2024-09-16 19:37:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:38:56 - Data creation successful
+ 2024-09-16 19:38:57 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:40:12 - Data creation successful
+ 2024-09-16 19:40:13 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:41:34 - Data creation successful
+ 2024-09-16 19:41:35 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:42:51 - Data creation successful
+ 2024-09-16 19:42:52 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:44:05 - Data creation successful
+ 2024-09-16 19:44:06 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:45:23 - Data creation successful
+ 2024-09-16 19:45:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:46:34 - Data creation successful
+ 2024-09-16 19:46:35 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:47:46 - Data creation successful
+ 2024-09-16 19:47:47 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:48:55 - Data creation successful
+ 2024-09-16 19:48:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:50:06 - Data creation successful
+ 2024-09-16 19:50:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:52:23 - Data creation successful
+ 2024-09-16 19:52:23 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:54:25 - Data creation successful
+ 2024-09-16 19:54:26 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:57:09 - Data creation successful
+ 2024-09-16 19:57:10 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 19:59:54 - Data creation successful
+ 2024-09-16 19:59:54 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:02:31 - Data creation successful
+ 2024-09-16 20:02:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:03:48 - Data creation successful
+ 2024-09-16 20:03:49 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:05:13 - Data creation successful
+ 2024-09-16 20:05:14 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:06:35 - Data creation successful
+ 2024-09-16 20:06:35 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:07:46 - Data creation successful
+ 2024-09-16 20:07:47 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:08:52 - Data creation successful
+ 2024-09-16 20:08:53 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:10:03 - Data creation successful
+ 2024-09-16 20:10:04 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:11:20 - Data creation successful
+ 2024-09-16 20:11:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:12:36 - Data creation successful
+ 2024-09-16 20:12:36 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:13:48 - Data creation successful
+ 2024-09-16 20:13:49 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:15:00 - Data creation successful
+ 2024-09-16 20:15:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:16:12 - Data creation successful
+ 2024-09-16 20:16:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:17:23 - Data creation successful
+ 2024-09-16 20:17:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:18:36 - Data creation successful
+ 2024-09-16 20:18:37 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:19:48 - Data creation successful
+ 2024-09-16 20:19:49 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:20:59 - Data creation successful
+ 2024-09-16 20:21:00 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:23:37 - Data creation successful
+ 2024-09-16 20:23:38 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:26:16 - Data creation successful
+ 2024-09-16 20:26:17 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:28:55 - Data creation successful
+ 2024-09-16 20:28:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:31:21 - Data creation successful
+ 2024-09-16 20:31:22 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:33:56 - Data creation successful
+ 2024-09-16 20:33:57 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:35:04 - Data creation successful
+ 2024-09-16 20:35:05 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:36:18 - Data creation successful
+ 2024-09-16 20:36:19 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:37:34 - Data creation successful
+ 2024-09-16 20:37:35 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:38:45 - Data creation successful
+ 2024-09-16 20:38:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:39:50 - Data creation successful
+ 2024-09-16 20:39:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:41:06 - Data creation successful
+ 2024-09-16 20:41:06 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:42:21 - Data creation successful
+ 2024-09-16 20:42:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:43:31 - Data creation successful
+ 2024-09-16 20:43:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:44:45 - Data creation successful
+ 2024-09-16 20:44:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:46:00 - Data creation successful
+ 2024-09-16 20:46:00 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:47:11 - Data creation successful
+ 2024-09-16 20:47:13 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:48:23 - Data creation successful
+ 2024-09-16 20:48:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:49:32 - Data creation successful
+ 2024-09-16 20:49:33 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:50:42 - Data creation successful
+ 2024-09-16 20:50:43 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:51:51 - Data creation successful
+ 2024-09-16 20:51:52 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:54:29 - Data creation successful
+ 2024-09-16 20:54:30 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:57:01 - Data creation successful
+ 2024-09-16 20:57:02 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 20:59:49 - Data creation successful
+ 2024-09-16 20:59:50 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:02:16 - Data creation successful
+ 2024-09-16 21:02:17 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:04:47 - Data creation successful
+ 2024-09-16 21:04:48 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:06:04 - Data creation successful
+ 2024-09-16 21:06:05 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:07:16 - Data creation successful
+ 2024-09-16 21:07:17 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:08:31 - Data creation successful
+ 2024-09-16 21:08:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:09:48 - Data creation successful
+ 2024-09-16 21:09:49 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:10:55 - Data creation successful
+ 2024-09-16 21:10:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:12:11 - Data creation successful
+ 2024-09-16 21:12:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:13:30 - Data creation successful
+ 2024-09-16 21:13:31 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:14:50 - Data creation successful
+ 2024-09-16 21:14:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:16:04 - Data creation successful
+ 2024-09-16 21:16:05 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:17:20 - Data creation successful
+ 2024-09-16 21:17:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:18:34 - Data creation successful
+ 2024-09-16 21:18:35 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:19:43 - Data creation successful
+ 2024-09-16 21:19:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:20:54 - Data creation successful
+ 2024-09-16 21:20:55 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:22:10 - Data creation successful
+ 2024-09-16 21:22:10 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:23:24 - Data creation successful
+ 2024-09-16 21:23:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:25:58 - Data creation successful
+ 2024-09-16 21:25:58 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:28:43 - Data creation successful
+ 2024-09-16 21:28:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:31:25 - Data creation successful
+ 2024-09-16 21:31:26 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:34:04 - Data creation successful
+ 2024-09-16 21:34:04 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:36:33 - Data creation successful
+ 2024-09-16 21:36:33 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:38:05 - Data creation successful
+ 2024-09-16 21:38:05 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:39:26 - Data creation successful
+ 2024-09-16 21:39:27 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:40:42 - Data creation successful
+ 2024-09-16 21:40:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:41:47 - Data creation successful
+ 2024-09-16 21:41:48 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:43:03 - Data creation successful
+ 2024-09-16 21:43:04 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:44:16 - Data creation successful
+ 2024-09-16 21:44:17 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:45:28 - Data creation successful
+ 2024-09-16 21:45:28 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:46:39 - Data creation successful
+ 2024-09-16 21:46:40 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:47:50 - Data creation successful
+ 2024-09-16 21:47:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:49:03 - Data creation successful
+ 2024-09-16 21:49:04 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:50:13 - Data creation successful
+ 2024-09-16 21:50:14 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:51:26 - Data creation successful
+ 2024-09-16 21:51:27 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:52:35 - Data creation successful
+ 2024-09-16 21:52:36 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:53:49 - Data creation successful
+ 2024-09-16 21:53:50 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:55:01 - Data creation successful
+ 2024-09-16 21:55:02 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 21:57:40 - Data creation successful
+ 2024-09-16 21:57:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:00:20 - Data creation successful
+ 2024-09-16 22:00:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:03:01 - Data creation successful
+ 2024-09-16 22:03:03 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:05:32 - Data creation successful
+ 2024-09-16 22:05:33 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:08:00 - Data creation successful
+ 2024-09-16 22:08:00 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:09:09 - Data creation successful
+ 2024-09-16 22:09:11 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:10:29 - Data creation successful
+ 2024-09-16 22:10:30 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:11:36 - Data creation successful
+ 2024-09-16 22:11:37 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:12:40 - Data creation successful
+ 2024-09-16 22:12:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:13:51 - Data creation successful
+ 2024-09-16 22:13:52 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:15:06 - Data creation successful
+ 2024-09-16 22:15:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:16:21 - Data creation successful
+ 2024-09-16 22:16:22 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:17:34 - Data creation successful
+ 2024-09-16 22:17:35 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:18:44 - Data creation successful
+ 2024-09-16 22:18:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:19:54 - Data creation successful
+ 2024-09-16 22:19:54 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:21:03 - Data creation successful
+ 2024-09-16 22:21:04 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:22:16 - Data creation successful
+ 2024-09-16 22:22:16 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:23:24 - Data creation successful
+ 2024-09-16 22:23:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:24:36 - Data creation successful
+ 2024-09-16 22:24:37 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:25:47 - Data creation successful
+ 2024-09-16 22:25:48 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:28:28 - Data creation successful
+ 2024-09-16 22:28:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:30:51 - Data creation successful
+ 2024-09-16 22:30:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:33:25 - Data creation successful
+ 2024-09-16 22:33:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:36:04 - Data creation successful
+ 2024-09-16 22:36:05 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:38:40 - Data creation successful
+ 2024-09-16 22:38:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:40:00 - Data creation successful
+ 2024-09-16 22:40:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:41:19 - Data creation successful
+ 2024-09-16 22:41:20 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:42:28 - Data creation successful
+ 2024-09-16 22:42:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:43:44 - Data creation successful
+ 2024-09-16 22:43:45 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:44:56 - Data creation successful
+ 2024-09-16 22:44:57 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:46:13 - Data creation successful
+ 2024-09-16 22:46:14 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:47:26 - Data creation successful
+ 2024-09-16 22:47:27 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:48:40 - Data creation successful
+ 2024-09-16 22:48:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:49:55 - Data creation successful
+ 2024-09-16 22:49:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:51:08 - Data creation successful
+ 2024-09-16 22:51:09 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:52:20 - Data creation successful
+ 2024-09-16 22:52:20 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:53:28 - Data creation successful
+ 2024-09-16 22:53:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:54:39 - Data creation successful
+ 2024-09-16 22:54:40 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:55:53 - Data creation successful
+ 2024-09-16 22:55:54 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:57:06 - Data creation successful
+ 2024-09-16 22:57:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 22:59:28 - Data creation successful
+ 2024-09-16 22:59:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:01:57 - Data creation successful
+ 2024-09-16 23:01:58 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:04:21 - Data creation successful
+ 2024-09-16 23:04:22 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:06:45 - Data creation successful
+ 2024-09-16 23:06:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:09:19 - Data creation successful
+ 2024-09-16 23:09:20 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:10:28 - Data creation successful
+ 2024-09-16 23:10:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:11:40 - Data creation successful
+ 2024-09-16 23:11:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:12:45 - Data creation successful
+ 2024-09-16 23:12:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:13:57 - Data creation successful
+ 2024-09-16 23:13:58 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:15:23 - Data creation successful
+ 2024-09-16 23:15:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:16:38 - Data creation successful
+ 2024-09-16 23:16:39 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:17:49 - Data creation successful
+ 2024-09-16 23:17:50 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:18:59 - Data creation successful
+ 2024-09-16 23:19:00 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:20:10 - Data creation successful
+ 2024-09-16 23:20:11 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:21:20 - Data creation successful
+ 2024-09-16 23:21:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:22:31 - Data creation successful
+ 2024-09-16 23:22:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:23:46 - Data creation successful
+ 2024-09-16 23:23:47 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:24:57 - Data creation successful
+ 2024-09-16 23:24:58 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:26:11 - Data creation successful
+ 2024-09-16 23:26:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:27:22 - Data creation successful
+ 2024-09-16 23:27:22 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:30:08 - Data creation successful
+ 2024-09-16 23:30:09 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:32:55 - Data creation successful
+ 2024-09-16 23:32:55 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:35:29 - Data creation successful
+ 2024-09-16 23:35:30 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:38:12 - Data creation successful
+ 2024-09-16 23:38:13 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:40:46 - Data creation successful
+ 2024-09-16 23:40:47 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:42:12 - Data creation successful
+ 2024-09-16 23:42:13 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:43:38 - Data creation successful
+ 2024-09-16 23:43:39 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:44:58 - Data creation successful
+ 2024-09-16 23:44:59 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:46:09 - Data creation successful
+ 2024-09-16 23:46:10 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:47:27 - Data creation successful
+ 2024-09-16 23:47:28 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:48:42 - Data creation successful
+ 2024-09-16 23:48:43 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:49:54 - Data creation successful
+ 2024-09-16 23:49:55 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:51:05 - Data creation successful
+ 2024-09-16 23:51:06 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:52:17 - Data creation successful
+ 2024-09-16 23:52:18 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:53:32 - Data creation successful
+ 2024-09-16 23:53:33 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:54:43 - Data creation successful
+ 2024-09-16 23:54:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:55:55 - Data creation successful
+ 2024-09-16 23:55:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:57:07 - Data creation successful
+ 2024-09-16 23:57:08 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:58:20 - Data creation successful
+ 2024-09-16 23:58:20 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-16 23:59:32 - Data creation successful
+ 2024-09-16 23:59:33 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 00:14:42 - Data creation successful
+ 2024-09-17 00:14:43 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 00:14:44 - Data creation successful
+ 2024-09-17 00:14:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 00:30:58 - Data creation successful
+ 2024-09-17 00:30:59 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 00:31:00 - Data creation successful
+ 2024-09-17 00:31:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 00:44:28 - Data creation successful
+ 2024-09-17 00:44:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 00:44:30 - Data creation successful
+ 2024-09-17 00:44:31 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:00:51 - Data creation successful
+ 2024-09-17 01:00:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:00:52 - Data creation successful
+ 2024-09-17 01:00:53 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:14:22 - Data creation successful
+ 2024-09-17 01:14:23 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:14:24 - Data creation successful
+ 2024-09-17 01:14:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:22:05 - Data creation successful
+ 2024-09-17 01:22:06 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:22:06 - Data creation successful
+ 2024-09-17 01:22:08 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:29:36 - Data creation successful
+ 2024-09-17 01:29:37 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:29:38 - Data creation successful
+ 2024-09-17 01:29:38 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:35:20 - Data creation successful
+ 2024-09-17 01:35:20 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:35:21 - Data creation successful
+ 2024-09-17 01:35:22 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:44:10 - Data creation successful
+ 2024-09-17 01:44:10 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:44:11 - Data creation successful
+ 2024-09-17 01:44:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:51:31 - Data creation successful
+ 2024-09-17 01:51:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:51:32 - Data creation successful
+ 2024-09-17 01:51:33 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:59:39 - Data creation successful
+ 2024-09-17 01:59:40 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 01:59:40 - Data creation successful
+ 2024-09-17 01:59:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:07:13 - Data creation successful
+ 2024-09-17 02:07:14 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:07:15 - Data creation successful
+ 2024-09-17 02:07:15 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:12:36 - Data creation successful
+ 2024-09-17 02:12:37 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:12:37 - Data creation successful
+ 2024-09-17 02:12:38 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:18:45 - Data creation successful
+ 2024-09-17 02:18:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:18:47 - Data creation successful
+ 2024-09-17 02:18:47 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:24:56 - Data creation successful
+ 2024-09-17 02:24:57 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:24:57 - Data creation successful
+ 2024-09-17 02:24:58 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:30:26 - Data creation successful
+ 2024-09-17 02:30:26 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:30:27 - Data creation successful
+ 2024-09-17 02:30:28 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:34:53 - Data creation successful
+ 2024-09-17 02:34:54 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:34:55 - Data creation successful
+ 2024-09-17 02:34:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:39:06 - Data creation successful
+ 2024-09-17 02:39:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:39:08 - Data creation successful
+ 2024-09-17 02:39:09 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:44:03 - Data creation successful
+ 2024-09-17 02:44:04 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:44:05 - Data creation successful
+ 2024-09-17 02:44:06 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:48:34 - Data creation successful
+ 2024-09-17 02:48:35 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:48:36 - Data creation successful
+ 2024-09-17 02:48:36 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:58:44 - Data creation successful
+ 2024-09-17 02:58:45 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 02:58:46 - Data creation successful
+ 2024-09-17 02:58:47 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 12:49:51 - Data creation successful
+ 2024-09-17 12:49:52 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 12:49:53 - Data creation successful
+ 2024-09-17 12:49:54 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 13:07:58 - Data creation successful
+ 2024-09-17 13:07:59 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 13:08:00 - Data creation successful
+ 2024-09-17 13:08:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 13:24:19 - Data creation successful
+ 2024-09-17 13:24:20 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 13:24:20 - Data creation successful
+ 2024-09-17 13:24:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 13:38:44 - Data creation successful
+ 2024-09-17 13:38:45 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 13:38:46 - Data creation successful
+ 2024-09-17 13:38:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 13:51:03 - Data creation successful
+ 2024-09-17 13:51:03 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 13:51:04 - Data creation successful
+ 2024-09-17 13:51:05 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 13:59:11 - Data creation successful
+ 2024-09-17 13:59:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 13:59:13 - Data creation successful
+ 2024-09-17 13:59:14 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:09:34 - Data creation successful
+ 2024-09-17 14:09:35 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:09:36 - Data creation successful
+ 2024-09-17 14:09:37 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:19:34 - Data creation successful
+ 2024-09-17 14:19:34 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:19:35 - Data creation successful
+ 2024-09-17 14:19:35 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:27:43 - Data creation successful
+ 2024-09-17 14:27:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:27:44 - Data creation successful
+ 2024-09-17 14:27:45 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:36:50 - Data creation successful
+ 2024-09-17 14:36:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:36:51 - Data creation successful
+ 2024-09-17 14:36:52 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:43:00 - Data creation successful
+ 2024-09-17 14:43:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:43:02 - Data creation successful
+ 2024-09-17 14:43:02 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:49:15 - Data creation successful
+ 2024-09-17 14:49:17 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:49:17 - Data creation successful
+ 2024-09-17 14:49:18 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:55:24 - Data creation successful
+ 2024-09-17 14:55:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 14:55:26 - Data creation successful
+ 2024-09-17 14:55:26 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 15:01:00 - Data creation successful
+ 2024-09-17 15:01:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 15:01:02 - Data creation successful
+ 2024-09-17 15:01:02 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 15:06:54 - Data creation successful
+ 2024-09-17 15:06:55 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 15:06:55 - Data creation successful
+ 2024-09-17 15:06:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 15:11:38 - Data creation successful
+ 2024-09-17 15:11:39 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 15:11:39 - Data creation successful
+ 2024-09-17 15:11:40 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 15:16:46 - Data creation successful
+ 2024-09-17 15:16:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 15:17:37 - Data creation failed with error: 
+ Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 246, in data_record_create
+    dc_resp = self.dataCreate(
+              ^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed/CommandLib.py", line 495, in dataCreate
+    return self._mapi.sendRecv(msg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed/MessageLib.py", line 386, in sendRecv
+    raise Exception("Timeout!!!!!!!!!")
+Exception: Timeout!!!!!!!!!
+
+ 2024-09-17 20:10:57 - Data creation successful
+ 2024-09-17 20:10:58 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:10:59 - Data creation successful
+ 2024-09-17 20:10:59 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:15:12 - Data creation successful
+ 2024-09-17 20:15:14 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:15:14 - Data creation successful
+ 2024-09-17 20:15:15 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:19:40 - Data creation successful
+ 2024-09-17 20:19:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:19:41 - Data creation successful
+ 2024-09-17 20:19:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:24:31 - Data creation successful
+ 2024-09-17 20:24:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:24:33 - Data creation successful
+ 2024-09-17 20:24:33 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:33:40 - Data creation successful
+ 2024-09-17 20:33:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:33:42 - Data creation successful
+ 2024-09-17 20:33:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:43:01 - Data creation successful
+ 2024-09-17 20:43:02 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:43:02 - Data creation successful
+ 2024-09-17 20:43:03 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:52:00 - Data creation successful
+ 2024-09-17 20:52:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 20:52:01 - Data creation successful
+ 2024-09-17 20:52:02 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:00:08 - Data creation successful
+ 2024-09-17 21:00:10 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:00:11 - Data creation successful
+ 2024-09-17 21:00:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:09:46 - Data creation successful
+ 2024-09-17 21:09:47 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:09:47 - Data creation successful
+ 2024-09-17 21:09:48 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:15:35 - Data creation successful
+ 2024-09-17 21:15:36 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:15:37 - Data creation successful
+ 2024-09-17 21:15:38 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:22:06 - Data creation successful
+ 2024-09-17 21:22:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:22:08 - Data creation successful
+ 2024-09-17 21:22:09 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:27:59 - Data creation successful
+ 2024-09-17 21:28:00 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:28:00 - Data creation successful
+ 2024-09-17 21:28:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:33:50 - Data creation successful
+ 2024-09-17 21:33:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:33:52 - Data creation successful
+ 2024-09-17 21:33:53 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:39:24 - Data creation successful
+ 2024-09-17 21:39:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:39:26 - Data creation successful
+ 2024-09-17 21:39:26 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:44:57 - Data creation successful
+ 2024-09-17 21:44:57 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:44:58 - Data creation successful
+ 2024-09-17 21:44:58 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:50:47 - Data creation successful
+ 2024-09-17 21:50:48 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:50:48 - Data creation successful
+ 2024-09-17 21:50:49 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:56:06 - Data creation successful
+ 2024-09-17 21:56:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 21:56:08 - Data creation successful
+ 2024-09-17 21:56:09 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:00:29 - Data creation successful
+ 2024-09-17 22:00:30 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:00:30 - Data creation successful
+ 2024-09-17 22:00:31 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:04:52 - Data creation successful
+ 2024-09-17 22:04:53 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:04:54 - Data creation successful
+ 2024-09-17 22:04:54 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:09:24 - Data creation successful
+ 2024-09-17 22:09:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:09:25 - Data creation successful
+ 2024-09-17 22:09:26 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:13:56 - Data creation successful
+ 2024-09-17 22:13:57 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:13:58 - Data creation successful
+ 2024-09-17 22:13:58 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:18:22 - Data creation successful
+ 2024-09-17 22:18:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:18:24 - Data creation successful
+ 2024-09-17 22:18:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:22:19 - Data creation successful
+ 2024-09-17 22:22:20 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:22:21 - Data creation successful
+ 2024-09-17 22:22:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:26:10 - Data creation successful
+ 2024-09-17 22:26:11 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:26:11 - Data creation successful
+ 2024-09-17 22:26:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:33:42 - Data creation successful
+ 2024-09-17 22:33:43 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:33:43 - Data creation successful
+ 2024-09-17 22:33:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:42:15 - Data creation successful
+ 2024-09-17 22:42:16 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:42:17 - Data creation successful
+ 2024-09-17 22:42:18 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:50:12 - Data creation successful
+ 2024-09-17 22:50:13 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:50:14 - Data creation successful
+ 2024-09-17 22:50:15 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:58:10 - Data creation successful
+ 2024-09-17 22:58:11 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 22:58:12 - Data creation successful
+ 2024-09-17 22:58:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:06:19 - Data creation successful
+ 2024-09-17 23:06:20 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:06:20 - Data creation successful
+ 2024-09-17 23:06:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:11:48 - Data creation successful
+ 2024-09-17 23:11:49 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:11:49 - Data creation successful
+ 2024-09-17 23:11:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:17:30 - Data creation successful
+ 2024-09-17 23:17:30 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:17:31 - Data creation successful
+ 2024-09-17 23:17:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:22:46 - Data creation successful
+ 2024-09-17 23:22:47 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:22:48 - Data creation successful
+ 2024-09-17 23:22:48 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:27:24 - Data creation successful
+ 2024-09-17 23:27:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:27:26 - Data creation successful
+ 2024-09-17 23:27:26 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:32:12 - Data creation successful
+ 2024-09-17 23:32:13 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:32:14 - Data creation successful
+ 2024-09-17 23:32:15 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:37:11 - Data creation successful
+ 2024-09-17 23:37:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:37:12 - Data creation successful
+ 2024-09-17 23:37:13 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:42:37 - Data creation successful
+ 2024-09-17 23:42:37 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:42:38 - Data creation successful
+ 2024-09-17 23:42:39 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:47:54 - Data creation successful
+ 2024-09-17 23:47:55 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:47:55 - Data creation successful
+ 2024-09-17 23:47:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:52:58 - Data creation successful
+ 2024-09-17 23:52:58 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:52:59 - Data creation successful
+ 2024-09-17 23:53:00 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:57:06 - Data creation successful
+ 2024-09-17 23:57:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-17 23:57:07 - Data creation successful
+ 2024-09-17 23:57:08 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:00:44 - Data creation successful
+ 2024-09-18 00:00:45 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:00:45 - Data creation successful
+ 2024-09-18 00:00:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:05:34 - Data creation successful
+ 2024-09-18 00:05:35 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:05:36 - Data creation successful
+ 2024-09-18 00:05:36 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:10:07 - Data creation successful
+ 2024-09-18 00:10:08 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:10:08 - Data creation successful
+ 2024-09-18 00:10:09 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:14:10 - Data creation successful
+ 2024-09-18 00:14:11 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:14:11 - Data creation successful
+ 2024-09-18 00:14:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:17:35 - Data creation successful
+ 2024-09-18 00:17:36 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:17:37 - Data creation successful
+ 2024-09-18 00:17:37 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:24:40 - Data creation successful
+ 2024-09-18 00:24:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:24:41 - Data creation successful
+ 2024-09-18 00:24:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:31:57 - Data creation successful
+ 2024-09-18 00:31:58 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:31:59 - Data creation successful
+ 2024-09-18 00:32:00 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:39:11 - Data creation successful
+ 2024-09-18 00:39:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:39:13 - Data creation successful
+ 2024-09-18 00:39:13 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:45:30 - Data creation successful
+ 2024-09-18 00:45:31 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:45:31 - Data creation successful
+ 2024-09-18 00:45:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:52:31 - Data creation successful
+ 2024-09-18 00:52:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:52:32 - Data creation successful
+ 2024-09-18 00:52:33 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:56:49 - Data creation successful
+ 2024-09-18 00:56:50 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 00:56:51 - Data creation successful
+ 2024-09-18 00:56:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:01:39 - Data creation successful
+ 2024-09-18 01:01:39 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:01:40 - Data creation successful
+ 2024-09-18 01:01:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:06:03 - Data creation successful
+ 2024-09-18 01:06:04 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:06:05 - Data creation successful
+ 2024-09-18 01:06:05 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:10:23 - Data creation successful
+ 2024-09-18 01:10:23 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:10:24 - Data creation successful
+ 2024-09-18 01:10:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:14:27 - Data creation successful
+ 2024-09-18 01:14:28 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:14:29 - Data creation successful
+ 2024-09-18 01:14:30 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:18:40 - Data creation successful
+ 2024-09-18 01:18:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:18:42 - Data creation successful
+ 2024-09-18 01:18:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:22:49 - Data creation successful
+ 2024-09-18 01:22:50 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:22:51 - Data creation successful
+ 2024-09-18 01:22:52 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:27:07 - Data creation successful
+ 2024-09-18 01:27:08 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:27:09 - Data creation successful
+ 2024-09-18 01:27:10 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:31:31 - Data creation successful
+ 2024-09-18 01:31:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:31:33 - Data creation successful
+ 2024-09-18 01:31:34 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:34:58 - Data creation successful
+ 2024-09-18 01:34:59 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:34:59 - Data creation successful
+ 2024-09-18 01:35:00 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:38:28 - Data creation successful
+ 2024-09-18 01:38:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:38:29 - Data creation successful
+ 2024-09-18 01:38:30 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:42:22 - Data creation successful
+ 2024-09-18 01:42:23 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:42:24 - Data creation successful
+ 2024-09-18 01:42:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:46:45 - Data creation successful
+ 2024-09-18 01:46:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:46:47 - Data creation successful
+ 2024-09-18 01:46:48 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:50:25 - Data creation successful
+ 2024-09-18 01:50:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:50:26 - Data creation successful
+ 2024-09-18 01:50:27 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:55:30 - Data creation successful
+ 2024-09-18 01:55:31 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 01:55:32 - Data creation successful
+ 2024-09-18 01:55:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:02:15 - Data creation successful
+ 2024-09-18 02:02:16 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:02:17 - Data creation successful
+ 2024-09-18 02:02:18 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:08:45 - Data creation successful
+ 2024-09-18 02:08:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:08:46 - Data creation successful
+ 2024-09-18 02:08:47 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:15:10 - Data creation successful
+ 2024-09-18 02:15:11 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:15:11 - Data creation successful
+ 2024-09-18 02:15:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:22:13 - Data creation successful
+ 2024-09-18 02:22:14 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:22:15 - Data creation successful
+ 2024-09-18 02:22:15 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:27:59 - Data creation successful
+ 2024-09-18 02:27:59 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:28:00 - Data creation successful
+ 2024-09-18 02:28:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:31:45 - Data creation successful
+ 2024-09-18 02:31:45 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:31:46 - Data creation successful
+ 2024-09-18 02:31:47 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:35:48 - Data creation successful
+ 2024-09-18 02:35:48 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:35:49 - Data creation successful
+ 2024-09-18 02:35:50 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:40:06 - Data creation successful
+ 2024-09-18 02:40:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:40:07 - Data creation successful
+ 2024-09-18 02:40:08 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:44:01 - Data creation successful
+ 2024-09-18 02:44:02 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:44:03 - Data creation successful
+ 2024-09-18 02:44:04 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:47:59 - Data creation successful
+ 2024-09-18 02:48:00 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:48:00 - Data creation successful
+ 2024-09-18 02:48:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:51:49 - Data creation successful
+ 2024-09-18 02:51:50 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:51:50 - Data creation successful
+ 2024-09-18 02:51:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:55:41 - Data creation successful
+ 2024-09-18 02:55:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:55:43 - Data creation successful
+ 2024-09-18 02:55:43 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:59:26 - Data creation successful
+ 2024-09-18 02:59:26 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 02:59:27 - Data creation successful
+ 2024-09-18 02:59:28 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:02:54 - Data creation successful
+ 2024-09-18 03:02:54 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:02:55 - Data creation successful
+ 2024-09-18 03:02:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:08:05 - Data creation successful
+ 2024-09-18 03:08:06 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:08:07 - Data creation successful
+ 2024-09-18 03:08:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:11:43 - Data creation successful
+ 2024-09-18 03:11:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:11:45 - Data creation successful
+ 2024-09-18 03:11:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:15:16 - Data creation successful
+ 2024-09-18 03:15:17 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:15:18 - Data creation successful
+ 2024-09-18 03:15:18 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:19:06 - Data creation successful
+ 2024-09-18 03:19:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:19:07 - Data creation successful
+ 2024-09-18 03:19:08 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:22:43 - Data creation successful
+ 2024-09-18 03:22:43 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:22:44 - Data creation successful
+ 2024-09-18 03:22:45 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:27:55 - Data creation successful
+ 2024-09-18 03:27:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:27:56 - Data creation successful
+ 2024-09-18 03:27:57 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:34:41 - Data creation successful
+ 2024-09-18 03:34:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:34:43 - Data creation successful
+ 2024-09-18 03:34:43 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:41:49 - Data creation successful
+ 2024-09-18 03:41:50 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:41:50 - Data creation successful
+ 2024-09-18 03:41:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:47:09 - Data creation successful
+ 2024-09-18 03:47:10 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:47:11 - Data creation successful
+ 2024-09-18 03:47:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:52:38 - Data creation successful
+ 2024-09-18 03:52:38 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:52:39 - Data creation successful
+ 2024-09-18 03:52:40 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:58:23 - Data creation successful
+ 2024-09-18 03:58:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 03:58:24 - Data creation successful
+ 2024-09-18 03:58:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:02:01 - Data creation successful
+ 2024-09-18 04:02:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:02:02 - Data creation successful
+ 2024-09-18 04:02:03 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:06:00 - Data creation successful
+ 2024-09-18 04:06:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:06:01 - Data creation successful
+ 2024-09-18 04:06:02 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:11:52 - Data creation successful
+ 2024-09-18 04:11:53 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:11:54 - Data creation successful
+ 2024-09-18 04:11:54 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:15:45 - Data creation successful
+ 2024-09-18 04:15:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:15:47 - Data creation successful
+ 2024-09-18 04:15:48 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:21:30 - Data creation successful
+ 2024-09-18 04:21:31 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:21:32 - Data creation successful
+ 2024-09-18 04:21:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:24:58 - Data creation successful
+ 2024-09-18 04:24:59 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:25:00 - Data creation successful
+ 2024-09-18 04:25:00 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:30:10 - Data creation successful
+ 2024-09-18 04:30:11 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:30:12 - Data creation successful
+ 2024-09-18 04:30:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:35:52 - Data creation successful
+ 2024-09-18 04:35:53 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:35:54 - Data creation successful
+ 2024-09-18 04:35:54 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:41:30 - Data creation successful
+ 2024-09-18 04:41:30 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:41:31 - Data creation successful
+ 2024-09-18 04:41:32 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:46:23 - Data creation successful
+ 2024-09-18 04:46:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:46:25 - Data creation successful
+ 2024-09-18 04:46:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:51:55 - Data creation successful
+ 2024-09-18 04:51:56 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:51:57 - Data creation successful
+ 2024-09-18 04:51:57 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:57:38 - Data creation successful
+ 2024-09-18 04:57:39 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 04:57:40 - Data creation successful
+ 2024-09-18 04:57:40 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:03:20 - Data creation successful
+ 2024-09-18 05:03:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:03:21 - Data creation successful
+ 2024-09-18 05:03:22 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:08:41 - Data creation successful
+ 2024-09-18 05:08:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:08:43 - Data creation successful
+ 2024-09-18 05:08:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:13:29 - Data creation successful
+ 2024-09-18 05:13:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:13:30 - Data creation successful
+ 2024-09-18 05:13:31 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:17:21 - Data creation successful
+ 2024-09-18 05:17:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:17:22 - Data creation successful
+ 2024-09-18 05:17:23 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:21:17 - Data creation successful
+ 2024-09-18 05:21:18 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:21:18 - Data creation successful
+ 2024-09-18 05:21:19 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:26:22 - Data creation successful
+ 2024-09-18 05:26:23 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:26:23 - Data creation successful
+ 2024-09-18 05:26:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:30:58 - Data creation successful
+ 2024-09-18 05:30:59 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:31:00 - Data creation successful
+ 2024-09-18 05:31:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:34:49 - Data creation successful
+ 2024-09-18 05:34:50 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:34:51 - Data creation successful
+ 2024-09-18 05:34:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:38:41 - Data creation successful
+ 2024-09-18 05:38:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:38:43 - Data creation successful
+ 2024-09-18 05:38:43 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:42:24 - Data creation successful
+ 2024-09-18 05:42:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:42:25 - Data creation successful
+ 2024-09-18 05:42:26 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:47:38 - Data creation successful
+ 2024-09-18 05:47:39 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:47:40 - Data creation successful
+ 2024-09-18 05:47:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:53:52 - Data creation successful
+ 2024-09-18 05:53:53 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:53:53 - Data creation successful
+ 2024-09-18 05:53:54 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:59:44 - Data creation successful
+ 2024-09-18 05:59:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 05:59:45 - Data creation successful
+ 2024-09-18 05:59:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:05:23 - Data creation successful
+ 2024-09-18 06:05:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:05:25 - Data creation successful
+ 2024-09-18 06:05:26 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:10:49 - Data creation successful
+ 2024-09-18 06:10:50 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:10:51 - Data creation successful
+ 2024-09-18 06:10:52 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:16:01 - Data creation successful
+ 2024-09-18 06:16:02 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:16:02 - Data creation successful
+ 2024-09-18 06:16:03 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:21:10 - Data creation successful
+ 2024-09-18 06:21:12 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:21:12 - Data creation successful
+ 2024-09-18 06:21:13 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:25:43 - Data creation successful
+ 2024-09-18 06:25:44 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:25:45 - Data creation successful
+ 2024-09-18 06:25:46 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:31:06 - Data creation successful
+ 2024-09-18 06:31:08 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:31:08 - Data creation successful
+ 2024-09-18 06:31:09 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:36:58 - Data creation successful
+ 2024-09-18 06:36:59 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:37:00 - Data creation successful
+ 2024-09-18 06:37:01 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:42:28 - Data creation successful
+ 2024-09-18 06:42:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:42:29 - Data creation successful
+ 2024-09-18 06:42:30 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:46:04 - Data creation successful
+ 2024-09-18 06:46:05 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:46:05 - Data creation successful
+ 2024-09-18 06:46:06 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:50:37 - Data creation successful
+ 2024-09-18 06:50:38 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:50:39 - Data creation successful
+ 2024-09-18 06:50:39 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:55:40 - Data creation successful
+ 2024-09-18 06:55:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 06:55:42 - Data creation successful
+ 2024-09-18 06:55:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:01:02 - Data creation successful
+ 2024-09-18 07:01:03 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:01:03 - Data creation successful
+ 2024-09-18 07:01:04 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:06:01 - Data creation successful
+ 2024-09-18 07:06:02 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:06:02 - Data creation successful
+ 2024-09-18 07:06:03 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:10:39 - Data creation successful
+ 2024-09-18 07:10:40 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:10:40 - Data creation successful
+ 2024-09-18 07:10:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:15:39 - Data creation successful
+ 2024-09-18 07:15:40 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:15:41 - Data creation successful
+ 2024-09-18 07:15:42 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:21:22 - Data creation successful
+ 2024-09-18 07:21:23 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:21:23 - Data creation successful
+ 2024-09-18 07:21:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:27:02 - Data creation successful
+ 2024-09-18 07:27:03 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:27:03 - Data creation successful
+ 2024-09-18 07:27:04 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:32:28 - Data creation successful
+ 2024-09-18 07:32:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:32:29 - Data creation successful
+ 2024-09-18 07:32:30 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:37:34 - Data creation successful
+ 2024-09-18 07:37:35 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:37:36 - Data creation successful
+ 2024-09-18 07:37:36 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:43:03 - Data creation successful
+ 2024-09-18 07:43:03 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:43:04 - Data creation successful
+ 2024-09-18 07:43:05 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:48:39 - Data creation successful
+ 2024-09-18 07:48:40 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:48:40 - Data creation successful
+ 2024-09-18 07:48:41 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:53:28 - Data creation successful
+ 2024-09-18 07:53:29 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:53:29 - Data creation successful
+ 2024-09-18 07:53:30 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:58:10 - Data creation successful
+ 2024-09-18 07:58:11 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 07:58:12 - Data creation successful
+ 2024-09-18 07:58:13 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:02:23 - Data creation successful
+ 2024-09-18 08:02:24 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:02:24 - Data creation successful
+ 2024-09-18 08:02:25 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:06:50 - Data creation successful
+ 2024-09-18 08:06:51 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:06:51 - Data creation successful
+ 2024-09-18 08:06:52 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:12:05 - Data creation successful
+ 2024-09-18 08:12:06 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:12:07 - Data creation successful
+ 2024-09-18 08:12:07 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:17:30 - Data creation successful
+ 2024-09-18 08:17:31 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:17:32 - Data creation successful
+ 2024-09-18 08:17:33 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:22:07 - Data creation successful
+ 2024-09-18 08:22:08 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:22:09 - Data creation successful
+ 2024-09-18 08:22:10 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:26:09 - Data creation successful
+ 2024-09-18 08:26:09 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:26:10 - Data creation successful
+ 2024-09-18 08:26:11 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:30:20 - Data creation successful
+ 2024-09-18 08:30:21 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2024-09-18 08:30:21 - Data creation successful
+ 2024-09-18 08:30:22 - Data put status: Pending
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.

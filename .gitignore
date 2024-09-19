@@ -52,3 +52,8 @@ MANIFEST
 .venv*/
 .conda*/
 .python-version
+
+notebooks/Data/*
+notebooks/Figures/*
+notebooks/Movies/*
+notebooks/Trained Models/*
