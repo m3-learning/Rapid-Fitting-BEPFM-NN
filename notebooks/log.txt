@@ -1,0 +1,162 @@
+
+ 2024-10-07 20:07:19 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:07:29 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:07:38 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:07:47 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:07:57 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:08:06 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:08:15 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:08:24 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:08:34 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:08:43 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:08:52 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:09:01 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:09:10 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:09:20 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:09:29 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:09:38 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:09:47 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:09:56 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:10:06 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:10:16 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:10:25 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:10:34 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:10:43 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:10:53 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:16:01 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:16:11 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'
+
+ 2024-10-07 20:16:20 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/DataFed_TorchFlow/src/datafed_torchflow/datafed.py", line 474, in upload_file
+    current_task_status = put_resp[0].task.msg
+                          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'google._upb._message.RepeatedCompositeContainer' object has no attribute 'msg'

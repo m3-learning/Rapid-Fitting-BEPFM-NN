@@ -1,0 +1,40 @@
+
+ 2024-10-22 01:46:25 - You have not authenticated into DataFed Client.Please follow instructions in the 'Basic Configuration' section in the link below to authenticate yourself:https://ornl.github.io/DataFed/user/client/install.html#basic-configuration
+ 2024-10-22 01:47:28 - Data creation successful
+ 2024-10-22 01:47:29 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed_torchflow/datafed.py", line 463, in upload_file
+    put_resp = self.dataPut(
+               ^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed/CommandLib.py", line 853, in dataPut
+    msg.id = self._resolve_id(data_id, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed/CommandLib.py", line 2659, in _resolve_id
+    if (len(item_id) > 2 and item_id[1] == "/") or (item_id.find(":") > 0):
+                                                    ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'find'
+
+ 2024-10-22 01:51:23 - Data creation successful
+ 2024-10-22 01:51:24 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed_torchflow/datafed.py", line 463, in upload_file
+    put_resp = self.dataPut(
+               ^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed/CommandLib.py", line 853, in dataPut
+    msg.id = self._resolve_id(data_id, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed/CommandLib.py", line 2659, in _resolve_id
+    if (len(item_id) > 2 and item_id[1] == "/") or (item_id.find(":") > 0):
+                                                    ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'find'
+
+ 2024-10-22 01:52:11 - Data creation successful
+ 2024-10-22 01:55:14 - Data put failed with error: Traceback (most recent call last):
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed_torchflow/datafed.py", line 463, in upload_file
+    put_resp = self.dataPut(
+               ^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed/CommandLib.py", line 853, in dataPut
+    msg.id = self._resolve_id(data_id, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jca92/miniconda3/envs/m3/lib/python3.11/site-packages/datafed/CommandLib.py", line 2659, in _resolve_id
+    if (len(item_id) > 2 and item_id[1] == "/") or (item_id.find(":") > 0):
+                                                    ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'find'
