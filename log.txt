@@ -38,3 +38,13 @@ AttributeError: 'tuple' object has no attribute 'find'
     if (len(item_id) > 2 and item_id[1] == "/") or (item_id.find(":") > 0):
                                                     ^^^^^^^^^^^^
 AttributeError: 'tuple' object has no attribute 'find'
+
+ 2024-11-21 11:49:01 - You have not authenticated into DataFed Client.Please follow instructions in the 'Basic Configuration' section in the link below to authenticate yourself:https://ornl.github.io/DataFed/user/client/install.html#basic-configuration
+ 2024-11-21 11:50:05 - Success! You have been authenticated into DataFed as: u/jca318.
+ 2024-11-21 11:50:05 - Success! You have set up the Globus endpoint 0ee42578-7301-11ef-b769-0f922496edc5.
+ 2024-11-21 11:53:20 - Success! You have been authenticated into DataFed as: u/jca318.
+ 2024-11-21 11:53:20 - Success! You have set up the Globus endpoint 0ee42578-7301-11ef-b769-0f922496edc5.
+ 2024-11-21 11:54:42 - Success! You have been authenticated into DataFed as: u/jca318.
+ 2024-11-21 11:54:42 - Success! You have set up the Globus endpoint 0ee42578-7301-11ef-b769-0f922496edc5.
+ 2024-11-21 11:55:00 - Success! You have been authenticated into DataFed as: u/jca318.
+ 2024-11-21 11:55:00 - Success! You have set up the Globus endpoint 0ee42578-7301-11ef-b769-0f922496edc5.
