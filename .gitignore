@@ -57,3 +57,7 @@ notebooks/Data/*
 notebooks/Figures/*
 notebooks/Movies/*
 notebooks/Trained Models/*
+
+*.pth
+*.txt
+notebooks/log.txt
