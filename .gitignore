@@ -57,3 +57,5 @@ notebooks/Data/*
 notebooks/Figures/*
 notebooks/Movies/*
 notebooks/Trained Models/*
+notebooks/SHO_Fitter_original_data_model_optimizer_Trust Region CG_epoch_14_train_loss_0.016973057058122423.pth
+notebooks/SHO_Fitter_original_data_model_optimizer_Trust Region CG_epoch_14_train_loss_0.017382523914178213.pth
