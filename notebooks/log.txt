@@ -1024,3 +1024,9 @@ Exception: Timeout!!!!!!!!!
  2025-03-19 21:03:34 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
  2025-03-19 21:04:52 - Success! You have been authenticated into DataFed as: u/jg3837.
  2025-03-19 21:04:52 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-03-20 15:17:49 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-03-20 15:17:49 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-03-20 15:27:27 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-03-20 15:27:28 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-03-20 16:02:02 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-03-20 16:02:02 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
