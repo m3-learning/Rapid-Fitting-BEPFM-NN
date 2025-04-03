@@ -1227,3 +1227,18 @@ Exception: Timeout!!!!!!!!!
  This just means that the Data put command ran without errors. 
  If the status is not complete, check the DataFed and Globus websites 
  to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-04-03 14:28:59 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-03 14:28:59 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-03 14:29:02 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-03 14:29:02 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-03 14:29:02 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-04-03 14:30:53 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-03 14:30:53 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-03 14:30:53 - Record title is too long. Truncating to 80 characters.
+ 2025-04-03 14:30:54 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
