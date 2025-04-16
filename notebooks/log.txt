@@ -1373,3 +1373,51 @@ Exception: Timeout!!!!!!!!!
  This just means that the Data put command ran without errors. 
  If the status is not complete, check the DataFed and Globus websites 
  to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-04-10 15:18:33 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-10 15:18:33 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-10 15:18:35 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-10 15:18:35 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-10 15:18:35 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-04-10 15:19:37 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-10 15:19:37 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-10 15:19:37 - Record title is too long. Truncating to 80 characters.
+ 2025-04-10 15:19:37 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-04-10 15:19:40 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-10 15:19:40 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-10 15:21:49 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-10 15:21:49 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-10 15:21:49 - Record title is too long. Truncating to 80 characters.
+ 2025-04-10 15:21:49 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-04-10 15:24:06 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-10 15:24:06 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-10 15:24:08 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-10 15:24:08 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-10 15:24:08 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-04-10 15:25:10 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-10 15:25:10 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-10 15:25:10 - Record title is too long. Truncating to 80 characters.
+ 2025-04-10 15:25:10 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-04-10 15:25:14 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-10 15:25:14 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-10 15:27:23 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-04-10 15:27:23 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-04-10 15:27:23 - Record title is too long. Truncating to 80 characters.
+ 2025-04-10 15:27:24 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
