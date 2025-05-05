@@ -6458,3 +6458,26 @@ Exception: Timeout!!!!!!!!!
  This just means that the Data put command ran without errors. 
  If the status is not complete, check the DataFed and Globus websites 
  to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-05-05 13:25:14 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-05 13:25:14 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-05 13:25:16 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-05 13:25:16 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-05 13:25:17 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-05-05 16:24:31 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-05 16:24:31 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-05 16:24:33 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-05 16:24:33 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-05 16:24:33 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-05-05 16:43:20 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-05 16:43:20 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-05 16:43:20 - Record title is too long. Truncating to 80 characters.
+ 2025-05-05 16:43:20 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
