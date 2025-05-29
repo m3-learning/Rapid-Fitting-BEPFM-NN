@@ -6635,3 +6635,63 @@ Exception: Timeout!!!!!!!!!
  This just means that the Data put command ran without errors. 
  If the status is not complete, check the DataFed and Globus websites 
  to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-05-29 10:39:12 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:39:12 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:39:14 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:39:14 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:39:14 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-05-29 10:41:06 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:41:06 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:41:06 - Record title is too long. Truncating to 80 characters.
+ 2025-05-29 10:41:06 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-05-29 10:41:35 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:41:35 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:41:36 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:41:36 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:41:36 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-05-29 10:43:30 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:43:30 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:43:30 - Record title is too long. Truncating to 80 characters.
+ 2025-05-29 10:43:30 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-05-29 10:44:00 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:44:00 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:44:02 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:44:02 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:44:02 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-05-29 10:45:56 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:45:56 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:45:56 - Record title is too long. Truncating to 80 characters.
+ 2025-05-29 10:45:56 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-05-29 10:46:25 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:46:25 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:46:27 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:46:27 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:46:27 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-05-29 10:48:20 - Success! You have set up the Globus endpoint f451f512-d437-11ef-9bd6-191f082cca5d.
+ 2025-05-29 10:48:20 - Success! You have been authenticated into DataFed as: u/jg3837.
+ 2025-05-29 10:48:20 - Record title is too long. Truncating to 80 characters.
+ 2025-05-29 10:48:21 - Data creation successful
+ This just means that the Data put command ran without errors. 
+ If the status is not complete, check the DataFed and Globus websites 
+ to ensure the Globus Endpoint is connected and the file transfer completes.

@@ -1,11 +1,13 @@
 import numpy as np
 import torch 
+from sklearn.model_selection import train_test_split
 
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 from matplotlib.gridspec import GridSpec
 
-from belearn.dataset.fitters.sho import SHO_fit_func_nn
+from belearn.functions.sho import SHO_nn
+from belearn.functions.hysteresis import hysteresis_nn
 
 from autophyslearn.spectroscopic.nn import Multiscale1DFitter, Model
 from autophyslearn.postprocessing.complex import ComplexPostProcessor
@@ -13,6 +15,7 @@ from autophyslearn.postprocessing.complex import ComplexPostProcessor
 from m3util.ml.rand import set_seeds
 from m3util.viz.text import set_sci_notation_label, labelfigs
 from m3util.viz.layout import FigDimConverter
+from m3util.ml.optimizers.TrustRegion import TRCG
 
 
 
@@ -25,7 +28,7 @@ def clims():
                 ],  # phase limits
     return clims_
 
-def instantiate_model(visualizer,
+def instantiate_SHO_model(visualizer,
                         noise = 0,
                         Train = False, 
                         model_basename = "SHO_Fitter_original_data_noise_0", 
@@ -34,15 +37,15 @@ def instantiate_model(visualizer,
                         seed=42, 
                         device = 'cuda:0'
                         ):
-    if noise != 0: 
-        visualizer.noise = noise
-        visualizer.get_dataset(noise = visualizer.noise)
-        visualizer.SHO_preprocessing() 
+    
+    visualizer.noise = noise
+    visualizer.get_dataset(noise = visualizer.noise)
+    visualizer.SHO_preprocessing() 
         
     set_seeds(seed)
     postprocessor = ComplexPostProcessor(visualizer,device=device)
 
-    model_ = Multiscale1DFitter(SHO_fit_func_nn, # function 
+    model_ = Multiscale1DFitter(SHO_nn, # function 
                         visualizer.frequency_bin, # x data
                         2, # input channels
                         4, # output channels
@@ -53,7 +56,7 @@ def instantiate_model(visualizer,
     #TODO: I am able to load the weights just fine instead of training with training=True
     # so maybe I don't need to be able to set training=False?  
     
-    model = Model(model_, visualizer, training=True,
+    model = Model(model_, visualizer, training=False,
             model_basename=model_basename,
             datafed_path=datafed_path,
             script_path = script_path,
@@ -79,29 +82,120 @@ def instantiate_model(visualizer,
             )
         elif noise == 2:
             model.load(
-                "./Trained Models/SHO Fitter/SHO_Fitter_original_data_noise_2_model_optimizer_Adam_epoch_4_train_loss_2.672502815257758.pth",
+                "./Trained Models/SHO Fitter/SHO_Fitter_original_data_noise_2_model_optimizer_Adam_epoch_4_train_loss_0.7284429110349501.pth",
                 device=device
             )
         elif noise == 4:
             model.load(
-                "./Trained Models/SHO Fitter/SHO_Fitter_original_data_noise_4_model_optimizer_Adam_epoch_4_train_loss_0.03404734210730735.pth",
+                "./Trained Models/SHO Fitter/SHO_Fitter_original_data_noise_4_model_optimizer_Adam_epoch_4_train_loss_0.9066618817979125.pth",
                 device = device
             )
         elif noise == 7:
             model.load(
-                "./Trained Models/SHO Fitter/SHO_Fitter_original_data_noise_7_model_optimizer_Adam_epoch_4_train_loss_0.03404734210730735.pth",
+                "./Trained Models/SHO Fitter/SHO_Fitter_original_data_noise_7_model_optimizer_Adam_epoch_4_train_loss_0.9597052748506906.pth",
                 device = device
             )
         else: 
             raise ValueError(f"Noise level {noise} has not been trained yet. \n Please train the model before loading it.")
     return model
 
-def instantiate_model_params(visualizer,model):
+
+def instantiate_hysteresis_model(visualizer,
+                                noise = 0,
+                                Train = False, 
+                                model_basename = "hysteresis_Fitter_original_data_noise_0", 
+                                datafed_path = '2024_SHO_Fitting/Noisy_NN',
+                                script_path = './Paper_Figures.ipynb',
+                                seed=42, 
+                                device = 'cuda:0'):
+    set_seeds(seed)
+    
+
+    data, voltage = visualizer.get_hysteresis(scaled=True, loop_interpolated = True)
+    # V = np.swapaxes(np.atleast_2d(dataset.get_voltage), 0, 1).astype(np.float64)
+
+    data = torch.atleast_3d(torch.tensor(data.reshape(-1, 96)))
+
+    model_ = Multiscale1DFitter(
+                #BE_viz.loop_fitting_function_torch, # function 
+                    hysteresis_nn,  # function
+
+                                voltage[:,0].squeeze(), # x data
+    #                             V.squeeze(),
+                                1, # input channels
+                                9, # output parameters
+                                visualizer.loop_param_scaler,
+                                loops_scaler=visualizer.hysteresis_scaler,
+                                device=device
+                                )
+
+    # instantiate the model
+    model = Model(model_, visualizer, training=Train, model_basename=model_basename,
+                    datafed_path=datafed_path,
+                    script_path=script_path,
+                    device=device)
+
+
+
+
+
+    X_train, X_test = train_test_split(data.reshape(-1,96), test_size=0.2, random_state=42, shuffle=True)
+
+    X_train = np.atleast_3d(X_train)
+
+    optimizer = {
+        "name": "TRCG", 
+        "optimizer": TRCG,
+        "closure_size": 1,
+        "cgopttol": 1e-3,
+        "c0tr": 0.2,
+        "c1tr": 0.25,
+        "c2tr": 0.75,
+        "t1tr": 0.75,
+        "t2tr": 2.0,
+        "radius_max": 5.0,  
+        "radius_initial": 1.0,
+        "radius" : 1.0,
+        "device": device,
+        "ADAM_epochs": 100}
+
+
+    if Train:
+        # fits the model
+        model.fit(
+            X_train,
+            1024,
+            optimizer=optimizer,
+            epochs = 5,
+        )
+    else:
+        model.load(
+        # "./Trained Models/SHO Fitter/SHO_Fitter_original_data_model_epoch_5_train_loss_0.0449272525189978.pth"
+        "./Trained Models/SHO Fitter/SHO_Fitter_original_data_model_optimizer_Trust Region CG_epoch_499_train_loss_0.005630633379850123.pth"
+        )
+    
+    return model, data
+    
+    
+
+def instantiate_SHO_model_params(visualizer,model):
     
     X_data, Y_data = visualizer.get_nn_data()
-    pred_data, scaled_param, NN_params = model.predict(X_data)
+    NN_recon, NN_params_scaled, NN_params = model.predict(X_data)
 
-    return X_data, Y_data, pred_data, scaled_param, NN_params
+    #return X_data, Y_data, pred_data, scaled_param, NN_params
+    return X_data, NN_params
+
+
+def instantiate_hysteresis_model_params(visualizer,model,data):
+    
+    NN_recon, NN_params_scaled, NN_params = model.predict(
+    data,
+    1024,
+    translate_params=False,
+    is_SHO=False
+)
+    return NN_params
 
 
 def copy_axis_to(source_ax, target_ax):
@@ -158,7 +252,9 @@ def fmt(x, pos):
     a, b = '{:.1e}'.format(x).split('e')
     b = int(b)
     if abs(b) >2: 
-        return r'${} \times 10^{{{}}}$'.format(a, b)
+        #return r'${} \times 10^{{{}}}$'.format(a, b)
+        return rf'$\hspace{{{-1.1}}} {a} \hspace{{{-0.4}}} \times \hspace{{{-0.4}}} 10^{{{b}}}$'
+
     else: 
         return float(a)*10**b
     
@@ -309,7 +405,7 @@ def plot_figure_3(visualizer, filename = None):
         if idx[0] == 'SHO_fit_comp':
             ax.axis("off")
             
-            model = instantiate_model(visualizer, Train = False)
+            model = instantiate_SHO_model(visualizer, Train = False)
             # sets the state of the output data
             out_state = {"scaled": True, "raw_format": "magnitude spectrum"}
             
@@ -355,9 +451,9 @@ def plot_figure_3(visualizer, filename = None):
                     if row == 0:
                         labelfigs(inset_ax,
                                 string_add="Best",
-                                loc ='tl',
-                                size=20,
-                                inset_fraction=(0.05,0.5),
+                                loc ='ct',
+                                label_size=20,
+                                inset_fraction=(0.075,0.5),
                                 style = 'b',
                                 horizontalalignment = "center"
                                 )
@@ -371,9 +467,9 @@ def plot_figure_3(visualizer, filename = None):
                     elif row == 1:
                         labelfigs(inset_ax,
                                 string_add="Median",
-                                loc ='tl',
-                                size=20,
-                                inset_fraction=(0.05,0.5),
+                                loc ='ct',
+                                label_size=20,
+                                inset_fraction=(0.075,0.5),
                                 style = 'b',
                                 horizontalalignment = "center"
                                 )
@@ -381,9 +477,9 @@ def plot_figure_3(visualizer, filename = None):
                     elif row == 2:
                         labelfigs(inset_ax,
                                 string_add="Worst",
-                                loc ='tl',
-                                size=20,
-                                inset_fraction=(0.05,0.5),
+                                loc ='ct',
+                                label_size=20,
+                                inset_fraction=(0.075,0.5),
                                 style = 'b',
                                 horizontalalignment="center"
                                 )
@@ -392,9 +488,9 @@ def plot_figure_3(visualizer, filename = None):
                     
                     labelfigs(inset_ax,
                         number=2*row+col,
-                        loc ='tl',
-                        size=20,
-                        inset_fraction=(0.05,0.95),
+                        loc ='tr',
+                        label_size=20,
+                        inset_fraction=(0.075,0.075),
                         style = 'b'
                         )
             plt.close(BMW_comp_fig)
@@ -411,7 +507,9 @@ def plot_figure_3(visualizer, filename = None):
                 label="NN",
                 ax=ax,
                 figlabel='g',
-                fig_label_size=20
+                label_size=20,
+                loc = 'tr',
+                inset_fraction=(0.075,0.075)
             )
             
             ax.set_ylabel("Scaled SHO Results",fontsize=20)
@@ -449,9 +547,9 @@ def plot_figure_3(visualizer, filename = None):
             
             labelfigs(ax,
                 string_add='h',
-                loc ='tl',
-                size=20, #22
-                inset_fraction=(0.12,0.96),
+                loc ='tr',
+                label_size=20, #22
+                inset_fraction=(0.12,0.04),
                 style = 'b'
                 )
 
@@ -551,7 +649,7 @@ def plot_figure_3(visualizer, filename = None):
                         
             
 
-def plot_figure_4(visualizer,model,pred_params,filename):
+def plot_figure_4(visualizer,filename):
     """
     Plots the figure 4 of the paper.
     """
@@ -589,6 +687,9 @@ def plot_figure_4(visualizer,model,pred_params,filename):
             ax.axis("off")
             size=(1.25, 1.25)
             gaps=(1, 0.66)
+            
+            model, data = instantiate_hysteresis_model(visualizer, Train = False)
+            
             fig_BMW = visualizer.hysteresis_comparison(data_names, nn_model=model, filename=None)
 
             
@@ -602,6 +703,10 @@ def plot_figure_4(visualizer,model,pred_params,filename):
                                             
                     #inset_ax.set_xlim([-16,16])
                     inset_ax.set_xticks([-16,0,16])
+                    inset_ax.get_xticklabels()[0].set_horizontalalignment('left')
+                    inset_ax.get_xticklabels()[1].set_horizontalalignment('center')
+                    inset_ax.get_xticklabels()[2].set_horizontalalignment('right')
+                    
                     if row == 2: 
                         inset_ax.set_xlabel('Voltage(V)', fontsize=20)
                     else:
@@ -654,9 +759,9 @@ def plot_figure_4(visualizer,model,pred_params,filename):
                     
                         labelfigs(inset_ax,
                                 string_add="Best",
-                                loc ='tl',
-                                size=17,
-                                inset_fraction=(0.05,0.5),
+                                loc ='ct',
+                                label_size=17,
+                                inset_fraction=(0.075,0.5),
                                 style = 'b',
                                 horizontalalignment = "center"
                                 )
@@ -671,9 +776,9 @@ def plot_figure_4(visualizer,model,pred_params,filename):
                     elif row == 1:
                         labelfigs(inset_ax,
                                 string_add="Median",
-                                loc ='tl',
-                                size=17,
-                                inset_fraction=(0.05,0.5),
+                                loc ='ct',
+                                label_size=17,
+                                inset_fraction=(0.075,0.5),
                                 style = 'b',
                                 horizontalalignment = "center"
                                 )
@@ -681,9 +786,9 @@ def plot_figure_4(visualizer,model,pred_params,filename):
                     elif row == 2:
                         labelfigs(inset_ax,
                                 string_add="Worst",
-                                loc ='tl',
-                                size=17,
-                                inset_fraction=(0.05,0.5),
+                                loc ='ct',
+                                label_size=17,
+                                inset_fraction=(0.075,0.5),
                                 style = 'b',
                                 horizontalalignment="center"
                                 )
@@ -692,9 +797,9 @@ def plot_figure_4(visualizer,model,pred_params,filename):
                     
                     labelfigs(inset_ax,
                         number=2*row+col,
-                        loc ='tl',
-                        size=17,
-                        inset_fraction=(0.075,0.90),
+                        loc ='tr',
+                        label_size=17,
+                        inset_fraction=(0.075,0.075),
                         style = 'b'
                         )
             plt.close(fig_BMW)
@@ -704,7 +809,7 @@ def plot_figure_4(visualizer,model,pred_params,filename):
                                         filename=None,ax=ax) 
 
             # labels the figure and does some styling
-            labelfigs(ax, string_add = 'g', loc ='tl',size=20, style="b", inset_fraction=(0.05,0.95))
+            labelfigs(ax, string_add = 'g', loc ='tr',label_size=20, style="b", inset_fraction=(0.05,0.05))
             ax.set_ylabel("Scaled Hysteresis Results",fontsize=25)
             ax.set_xlabel("")
             
@@ -717,8 +822,10 @@ def plot_figure_4(visualizer,model,pred_params,filename):
             plt.setp(legend.get_texts(), fontsize=20) # Set the label size
         
         elif idx[0] == "switching_maps": 
+            
+            NN_params = instantiate_hysteresis_model_params(visualizer,model,data)
                 
-            fig_hysteresis = visualizer.hysteresis_maps(pred_params, cycle=0, filename=None);
+            fig_hysteresis = visualizer.hysteresis_maps(NN_params, cycle=0, filename=None);
             fig_scalar = FigDimConverter((1/2.5, 1/2.5))
 
             
@@ -751,21 +858,21 @@ def plot_figure_4(visualizer,model,pred_params,filename):
                     
             labelfigs(ax,
                     string_add="Least Squares Fit Method",
-                    loc='tl',size=25,inset_fraction = (0.05,0.5),style='b',
+                    loc='ct',label_size=25,inset_fraction = (0.05,0.5),style='b',
                     horizontalalignment = 'center',verticalalignment='center')
             labelfigs(ax,
                     string_add="h",
-                    loc='tl',size=25,inset_fraction = (0.05,0.05),style='b',
-                    horizontalalignment = 'left',verticalalignment='center')
+                    loc='tl',label_size=25,inset_fraction = (0.3,-0.015),style='b',
+                    horizontalalignment = 'center',verticalalignment='center')
         
             labelfigs(ax,
                     string_add="Neural Network with Trust Region CG",
-                    loc='tl',size=25,inset_fraction = (0.55,0.5),style='b',
+                    loc='ct',label_size=25,inset_fraction = (0.55,0.5),style='b',
                     horizontalalignment = 'center',verticalalignment='center')
             labelfigs(ax,
                     string_add="i",
-                    loc='tl',size=25,inset_fraction = (0.55,0.05),style='b',
-                    horizontalalignment = 'left',verticalalignment='center')
+                    loc='tl',label_size=25,inset_fraction = (0.8,-0.015),style='b',
+                    horizontalalignment = 'center',verticalalignment='center')
                         
             ax.axis("off")         
             plt.close(fig_hysteresis)
@@ -781,20 +888,8 @@ def plot_figure_4(visualizer,model,pred_params,filename):
                     ax.figure, filename
                 )
 
-
+# TODO: remove the y-axis ticks for the violin plots for noise levels 2,7
 def plot_figure_5(visualizer,
-                    model0, 
-                    X_data0, 
-                    NN_params0, 
-                    model2, 
-                    X_data2, 
-                    NN_params2, 
-                    model4,
-                    X_data4, 
-                    NN_params4, 
-                    model7, 
-                    X_data7, 
-                    NN_params7, 
                     filename):
     """
     Plots the figure 5 of the paper.
@@ -808,21 +903,21 @@ def plot_figure_5(visualizer,
 
 
     order = [['violin_noise_0'],
-            ['violin_noise_2'],
-            ['violin_noise_7'],
             ['switching_maps_noise_0'],
+            ['violin_noise_2'],
             ['switching_maps_noise_2'],
             ['switching_maps_noise_4'],
+            ['violin_noise_7'],
             ['switching_maps_noise_7']
             ]
 
     subplot_specs = [(0, 17, 0, 13 ), # top left: violin noise level 0 
+                    (20, 26, 0, 45), # switching maps:noise = 0             
                     (0, 17, 16, 29), # top middle: violin noise level 2
+                    (27, 33, 0, 45), # switching maps:noise = 2
+                    (34, 40, 0, 45), # switching maps:noise = 4
                     (0, 17, 32, 45), # top right, violin noise level 7
-                    (20, 26, 0, 45), # noise = 0 
-                    (27, 33, 0, 45), # noise = 2
-                    (34, 40, 0, 45), # noise = 4
-                    (41, 47, 0, 45), # noise = 7
+                    (41, 47, 0, 45), # switching maps:noise = 7
                     ]
 
     
@@ -831,6 +926,7 @@ def plot_figure_5(visualizer,
         'violin_noise_2': 'b',
         'violin_noise_7': 'c',
     }
+    
 
 
     for i, (r_start, r_end, c_start, c_end) in enumerate(subplot_specs):
@@ -840,10 +936,13 @@ def plot_figure_5(visualizer,
         if idx[0].startswith('violin_noise'):
                 # this print statement is a low-tech way to track progress
                 # since each violin plot takes a while (~40 seconds) to render
-                print(f"working on the violin plot for noise level {idx[0][-1]} ...")
+                
+                
+                
+                
             
-                visualizer.noise = int(idx[0][-1])
-                visualizer.get_dataset(noise = visualizer.noise)
+                # visualizer.noise = int(idx[0][-1])
+                # visualizer.get_dataset(noise = visualizer.noise)
 
                 state_ = {'resampled': True,
                     'raw_format': 'complex',
@@ -855,19 +954,34 @@ def plot_figure_5(visualizer,
                     'LSQF_phase_shift': np.pi/2, #1.5707963267948966,
                     'NN_phase_shift': np.pi/2,
                     'noise': int(idx[0][-1])}
+
+                print(f"instantiating model for noise level {idx[0][-1]} ...")
+
+                model = instantiate_SHO_model(visualizer,
+                    noise = int(idx[0][-1]),
+                    model_basename = f"SHO_Fitter_original_data_noise_{idx[0][-1]}",
+                    datafed_path = '2024_SHO_Fitting/Noisy_NN',
+                    script_path = './Paper_Figures.ipynb',
+                    seed=42, 
+                    device = 'cuda:0'
+                    )
                 
+                X_data, NN_params = instantiate_SHO_model_params(visualizer,model)
+                
+                print(f"working on the violin plot for noise level {idx[0][-1]} ...")
                 
                 visualizer.violin_plot_comparison_SHO(
                         state_,
-                        eval(f'model{idx[0][-1]}'),
-                        eval(f'X_data{idx[0][-1]}'),
-                        eval(f'NN_params{idx[0][-1]}'),
+                        model,
+                        X_data,
+                        NN_params,
                         filename=None,
                         label="NN",
                         ax=ax,
                         figlabel=violin_plot_noise_to_figlabel[idx[0]],
-                        fig_label_size=20,
-                        inset_fraction = (0.05,0.95)
+                        label_size=20,
+                        loc = 'tr',
+                        inset_fraction = (0.075,0.075)
                     )
                 if idx[0] == 'violin_noise_0':
                     ax.set_ylabel("Scaled SHO Results",fontsize=20)
@@ -879,35 +993,53 @@ def plot_figure_5(visualizer,
                 
                 else:
                     ax.set_ylabel("")
+                    ax.set_yticklabels([])
                     ax.get_legend().remove()
                 
                 ax.set_xlabel("")
-                    
+                
+                ax.set_title(f"Noise Level {idx[0][-1]}",fontsize=20)
                 ax.tick_params(axis='x',labelsize=20)
                 ax.tick_params(axis='y',labelsize=20)
                 ax.set_yticks(np.linspace(-8,8,9))
-        
+                
+                
         
         elif idx[0].startswith('switching_maps_noise'):
-                visualizer.noise = int(idx[0][-1])
-                visualizer.get_dataset(noise = visualizer.noise)
+                if idx[0][-1] == "4":
+                    print(f"instantiating model for noise level {idx[0][-1]} ...")
+
+                    model = instantiate_SHO_model(visualizer,
+                        noise = int(idx[0][-1]),
+                        model_basename = f"SHO_Fitter_original_data_noise_{idx[0][-1]}",
+                        datafed_path = '2024_SHO_Fitting/Noisy_NN',
+                        script_path = './Paper_Figures.ipynb',
+                        seed=42, 
+                        device = 'cuda:0'
+                        )
+                    
+                    X_data, NN_params = instantiate_SHO_model_params(visualizer,model)
+
+                
+                # visualizer.noise = int(idx[0][-1])
+                # visualizer.get_dataset(noise = visualizer.noise)
                 
                 if visualizer.noise == 0:
-                    labelfigs(ax, string_add = "d", inset_fraction = (-0.1, 0.010),size=20,style='b')
-                    labelfigs(ax, string_add = "\u25CF", inset_fraction = (-0.1, 0.085),size=20,style='b')
+                    labelfigs(ax, string_add = "d", inset_fraction = (-0.1, 0.010),label_size=20,style='b')
+                    labelfigs(ax, string_add = "\u25CF", inset_fraction = (-0.1, 0.085),label_size=20,style='b')
 
-                    labelfigs(ax, string_add = "e", inset_fraction = (-0.1, 0.215),size=20,style='b')
-                    labelfigs(ax, string_add = "\u25BC", inset_fraction = (-0.1, 0.2915),size=20,style='b')
+                    labelfigs(ax, string_add = "e", inset_fraction = (-0.1, 0.215),label_size=20,style='b')
+                    labelfigs(ax, string_add = "\u25BC", inset_fraction = (-0.1, 0.2915),label_size=20,style='b')
 
-                    labelfigs(ax, string_add = "f", inset_fraction = (-0.1, 0.424),size=20,style='b')
-                    labelfigs(ax, string_add = "\u25B2", inset_fraction = (-0.1, 0.496),size=20,style='b')
+                    labelfigs(ax, string_add = "f", inset_fraction = (-0.1, 0.424),label_size=20,style='b')
+                    labelfigs(ax, string_add = "\u25B2", inset_fraction = (-0.1, 0.496),label_size=20,style='b')
 
-                    labelfigs(ax, string_add = "g", inset_fraction = (-0.1, 0.63),size=20,style='b')
-                    labelfigs(ax, string_add = "\u25BA", inset_fraction = (-0.1, 0.705),size=20,style='b')
+                    labelfigs(ax, string_add = "g", inset_fraction = (-0.1, 0.63),label_size=20,style='b')
+                    labelfigs(ax, string_add = "\u25BA", inset_fraction = (-0.1, 0.705),label_size=20,style='b')
 
 
-                    labelfigs(ax, string_add = "h", inset_fraction = (-0.1, 0.835),size=20,style='b')
-                    labelfigs(ax, string_add = "\u25C0", inset_fraction = (-0.1, 0.91),size=20,style='b')
+                    labelfigs(ax, string_add = "h", inset_fraction = (-0.1, 0.835),label_size=20,style='b')
+                    labelfigs(ax, string_add = "\u25C0", inset_fraction = (-0.1, 0.91),label_size=20,style='b')
 
                 LSQF_ = {'resampled': True,
                     'raw_format': 'complex',
@@ -922,7 +1054,7 @@ def plot_figure_5(visualizer,
                 
                 LSQF_Params = visualizer.SHO_fit_results(state = LSQF_)
                 voltage_and_switching_maps_fig = visualizer.SHO_switching_maps_test(
-                    SHO_ = [LSQF_Params,eval(f'NN_params{idx[0][-1]}')],
+                    SHO_ = [LSQF_Params,NN_params],
                     labels = ["LSQF", "NN"], 
                     filename=None,
                     colorbars=False,
@@ -968,13 +1100,13 @@ def plot_figure_5(visualizer,
                             else:
                                 cbar = plt.colorbar(inset_ax.images[0],          #axs[1,col].images[0],
                                                 cax=bar_ax[0], format=FuncFormatter(fmt),orientation = 'horizontal',
-                                                ticks = [-3.0,3.0])    
+                                                ticks = [-3.14,3.14])    
                             
                             
                             cbar.ax.get_xticklabels()[0].set_horizontalalignment('left')
                             cbar.ax.get_xticklabels()[1].set_horizontalalignment('right')
 
-                            cbar.ax.tick_params(labelsize = 8)
+                            cbar.ax.tick_params(labelsize = 7)
 
                 plt.close(voltage_and_switching_maps_fig)
     plt.tight_layout()
