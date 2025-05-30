@@ -38,7 +38,8 @@ def instantiate_SHO_model(visualizer,
                         device = 'cuda:0'
                         ):
     
-    visualizer.noise = noise
+    #visualizer.noise = noise
+    print("instantiating model for noise level", visualizer.noise)
     visualizer.get_dataset(noise = visualizer.noise)
     visualizer.SHO_preprocessing() 
         
@@ -526,7 +527,7 @@ def plot_figure_3(visualizer, filename = None):
             plt.setp(legend.get_texts(), fontsize=20) # Set the label size
             
         elif idx[0] == 'voltage_curve':
-            voltage_and_switching_maps_fig = visualizer.SHO_switching_maps_test(SHO_ = [LSQF_params,NN_params],
+            voltage_and_switching_maps_fig = visualizer.SHO_switching_maps(SHO_ = [LSQF_params,NN_params],
                                             labels = ["LSQF", "NN"], 
                                             filename=None,
                                             label_marker_starting_index=8,
@@ -955,6 +956,7 @@ def plot_figure_5(visualizer,
                     'NN_phase_shift': np.pi/2,
                     'noise': int(idx[0][-1])}
 
+                visualizer.set_attributes(**state_)
                 print(f"instantiating model for noise level {idx[0][-1]} ...")
 
                 model = instantiate_SHO_model(visualizer,
@@ -1041,19 +1043,21 @@ def plot_figure_5(visualizer,
                     labelfigs(ax, string_add = "h", inset_fraction = (-0.1, 0.835),label_size=20,style='b')
                     labelfigs(ax, string_add = "\u25C0", inset_fraction = (-0.1, 0.91),label_size=20,style='b')
 
-                LSQF_ = {'resampled': True,
-                    'raw_format': 'complex',
-                    'fitter': 'LSQF',
-                    'scaled': False,
-                    'output_shape': 'index',
-                    'measurement_state': 'all',
-                    'resampled_bins': 165,
-                    'LSQF_phase_shift': 1.5707963267948966,
-                    'NN_phase_shift': 1.5707963267948966,
-                    'noise': int(idx[0][-1])}
+                # LSQF_ = {'resampled': True,
+                #     'raw_format': 'complex',
+                #     'fitter': 'LSQF',
+                #     'scaled': False,
+                #     'output_shape': 'index',
+                #     'measurement_state': 'all',
+                #     'resampled_bins': 165,
+                #     'LSQF_phase_shift': 1.5707963267948966,
+                #     'NN_phase_shift': 1.5707963267948966,
+                #     'noise': int(idx[0][-1])}
                 
-                LSQF_Params = visualizer.SHO_fit_results(state = LSQF_)
-                voltage_and_switching_maps_fig = visualizer.SHO_switching_maps_test(
+                #LSQF_Params = visualizer.SHO_fit_results(state = LSQF_)
+                LSQF_Params = visualizer.SHO_fit_results(state = state_)
+
+                voltage_and_switching_maps_fig = visualizer.SHO_switching_maps(
                     SHO_ = [LSQF_Params,NN_params],
                     labels = ["LSQF", "NN"], 
                     filename=None,
