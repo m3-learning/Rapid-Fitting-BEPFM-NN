@@ -7109,3 +7109,4 @@ Exception: Timeout!!!!!!!!!
  This just means that the Data put command ran without errors. 
  If the status is not complete, check the DataFed and Globus websites 
  to ensure the Globus Endpoint is connected and the file transfer completes.
+ 2025-08-07 18:31:22 - Success! You have been authenticated into DataFed as: u/jg3837.

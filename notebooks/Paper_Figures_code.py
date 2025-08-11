@@ -890,6 +890,7 @@ def plot_figure_4(visualizer,filename):
                 )
 
 # TODO: remove the y-axis ticks for the violin plots for noise levels 2,7
+# unless they are too far apart to necessitate it
 def plot_figure_5(visualizer,
                     filename):
     """
@@ -942,8 +943,6 @@ def plot_figure_5(visualizer,
                 
                 
             
-                # visualizer.noise = int(idx[0][-1])
-                # visualizer.get_dataset(noise = visualizer.noise)
 
                 state_ = {'resampled': True,
                     'raw_format': 'complex',
@@ -1008,7 +1007,22 @@ def plot_figure_5(visualizer,
                 
         
         elif idx[0].startswith('switching_maps_noise'):
-                if idx[0][-1] == "4":
+                # noise level 4 is special because it wasn't already defined for the violin plots
+                if idx[0][-1] == "4": 
+                    
+                    state_ = {'resampled': True,
+                    'raw_format': 'complex',
+                    'fitter': 'LSQF',
+                    'scaled': True,
+                    'output_shape': 'index',
+                    'measurement_state': 'all',
+                    'resampled_bins': 165,
+                    'LSQF_phase_shift': np.pi/2, #1.5707963267948966,
+                    'NN_phase_shift': np.pi/2,
+                    'noise': int(idx[0][-1])}
+                    visualizer.set_attributes(**state_)
+
+                    
                     print(f"instantiating model for noise level {idx[0][-1]} ...")
 
                     model = instantiate_SHO_model(visualizer,
@@ -1023,10 +1037,9 @@ def plot_figure_5(visualizer,
                     X_data, NN_params = instantiate_SHO_model_params(visualizer,model)
 
                 
-                # visualizer.noise = int(idx[0][-1])
-                # visualizer.get_dataset(noise = visualizer.noise)
+          
                 
-                if visualizer.noise == 0:
+                elif visualizer.noise == 0:
                     labelfigs(ax, string_add = "d", inset_fraction = (-0.1, 0.010),label_size=20,style='b')
                     labelfigs(ax, string_add = "\u25CF", inset_fraction = (-0.1, 0.085),label_size=20,style='b')
 
@@ -1043,18 +1056,7 @@ def plot_figure_5(visualizer,
                     labelfigs(ax, string_add = "h", inset_fraction = (-0.1, 0.835),label_size=20,style='b')
                     labelfigs(ax, string_add = "\u25C0", inset_fraction = (-0.1, 0.91),label_size=20,style='b')
 
-                # LSQF_ = {'resampled': True,
-                #     'raw_format': 'complex',
-                #     'fitter': 'LSQF',
-                #     'scaled': False,
-                #     'output_shape': 'index',
-                #     'measurement_state': 'all',
-                #     'resampled_bins': 165,
-                #     'LSQF_phase_shift': 1.5707963267948966,
-                #     'NN_phase_shift': 1.5707963267948966,
-                #     'noise': int(idx[0][-1])}
                 
-                #LSQF_Params = visualizer.SHO_fit_results(state = LSQF_)
                 LSQF_Params = visualizer.SHO_fit_results(state = state_)
 
                 voltage_and_switching_maps_fig = visualizer.SHO_switching_maps(
